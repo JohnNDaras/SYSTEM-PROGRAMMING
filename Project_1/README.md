@@ -1,4 +1,4 @@
-<p align = center>*Comcurrent Directory Copying in Unix: Efficient Server-Client Communication with Thread Processing* 
+*<p align = center>Comcurrent Directory Copying in Unix: Efficient Server-Client Communication with Thread Processing* 
 
 
 This project guides you through the process of creating processes using fork/exec system calls,
