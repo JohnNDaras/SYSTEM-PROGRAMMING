@@ -27,10 +27,10 @@ Command Line Arguments: <br> The server is invoked with the following command-li
 ./dataServer -p <port> -s <thread_pool_size> -q <queue_size> -b <block_size>  <br> <br>
 Where: 
 <br>
-	- 1.port: The port on which the server listens for external connections. <br>
-	- 2.thread pool size: The number of worker threads in the thread pool. <br>
-	- 3.queue size: The number of positions in the execution queue. <br>
-	- 4.block size: The size of file blocks in bytes sent by worker threads. <br>
+	- 1.  port: The port on which the server listens for external connections. <br>
+	- 2.  thread pool size: The number of worker threads in the thread pool. <br>
+	- 3.  queue size: The number of positions in the execution queue. <br>
+	- 4.  block size: The size of file blocks in bytes sent by worker threads. <br>
 
     
 <br>
