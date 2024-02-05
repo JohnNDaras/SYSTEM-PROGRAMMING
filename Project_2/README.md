@@ -18,7 +18,7 @@ time.
 Client: The client, named remoteClient, connects to the server on a specified port and provides the
 directory name to copy. For each file in the directory, the client receives the file name, file metadata,
 and file contents from the server. The client creates the necessary directories and subdirectories
-locally. If a file already exists in the local file system, it is deleted and recreated from scratch.  <br>
+locally. If a file already exists in the local file system, it is deleted and recreated from scratch.  <br <br>
 Conventions: <br>
 • The client is assumed to know the hierarchy of the server's file system and can choose any 
 directory for copying. <br>
@@ -26,11 +26,12 @@ directory for copying. <br>
 Command Line Arguments: <br> The server is invoked with the following command-line format:  <br>
 ./dataServer -p <port> -s <thread_pool_size> -q <queue_size> -b <block_size>  <br> <br>
 Where: <br>
-<p>1.port: The port on which the server listens for external connections. <br>
-2.thread pool size: The number of worker threads in the thread pool. <br>
-3.queue size: The number of positions in the execution queue. <br>
-4.block size: The size of file blocks in bytes sent by worker threads. <br> <br>
-
+<ol>
+<li>1.port: The port on which the server listens for external connections. <li>
+<li>2.thread pool size: The number of worker threads in the thread pool. <li>
+<li>3.queue size: The number of positions in the execution queue. <li>
+<li>4.block size: The size of file blocks in bytes sent by worker threads. <li>
+<ol>
 
 The client is invoked with the following command-line format: <br>
 ./remoteClient -i <server_ip> -p <server_port> -d <directory>  <br> <br>
