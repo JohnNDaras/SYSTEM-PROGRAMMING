@@ -18,7 +18,7 @@ time.
 Client: The client, named remoteClient, connects to the server on a specified port and provides the
 directory name to copy. For each file in the directory, the client receives the file name, file metadata,
 and file contents from the server. The client creates the necessary directories and subdirectories
-locally. If a file already exists in the local file system, it is deleted and recreated from scratch.<lb>
+locally. If a file already exists in the local file system, it is deleted and recreated from scratch.<\n>
 Conventions: <lb>
 • The client is assumed to know the hierarchy of the server's file system and can choose any 
 directory for copying. <b>
