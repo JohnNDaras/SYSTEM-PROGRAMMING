@@ -32,8 +32,7 @@ Where:
     <li>queue size: The number of positions in the execution queue. 
     <li>block size: The size of file blocks in bytes sent by worker threads.
 <ol>
-<br>
-<ol></ol>
+</ol>
 The client is invoked with the following command-line format: <br>
 ./remoteClient -i <server_ip> -p <server_port> -d <directory>  <br> <br>
 
