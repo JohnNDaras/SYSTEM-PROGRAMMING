@@ -23,8 +23,8 @@ Conventions: <br>
 • The client is assumed to know the hierarchy of the server's file system and can choose any 
 directory for copying. <br>
 • The server's file system does not contain empty directories. <br> <br>
-Command Line Arguments: The server is invoked with the following command-line format:  <br>
-./dataServer -p <port> -s <thread_pool_size> -q <queue_size> -b <block_size>  <br>
+Command Line Arguments: <br> The server is invoked with the following command-line format:  <br>
+./dataServer -p <port> -s <thread_pool_size> -q <queue_size> -b <block_size>  <br> <br>
 Where: <br>
 1.port: The port on which the server listens for external connections. 
 2.thread pool size: The number of worker threads in the thread pool. 
@@ -33,7 +33,7 @@ Where: <br>
 
 
 The client is invoked with the following command-line format: <br>
-./remoteClient -i <server_ip> -p <server_port> -d <directory>  <br>
+./remoteClient -i <server_ip> -p <server_port> -d <directory>  <br> <br>
 
 Where: <br> 
 1. server ip: The IP address used by the server. <br>
