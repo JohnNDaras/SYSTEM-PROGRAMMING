@@ -1,3 +1,6 @@
+<p align = center>*Comcurrent Directory Copying in Unix: Efficient Server-Client Communication with Thread Processing* 
+
+
 This project guides you through the process of creating processes using fork/exec system calls,
 establishing communication between processes with pipes and named pipes, performing low-level
 I/O operations, handling signals, and crafting shell scripts.
@@ -46,4 +49,4 @@ The structure of the process hierarchy is summarized in Figure 1.
 ![Screenshot from 2024-02-05 18-48-24~2](https://github.com/JohnNDaras/SYSTEM-PROGRAMMING/assets/117290033/dab11f88-c352-4795-b50c-d9cd78a374f2)
 
 <b>
-<p align = centre>Figure 1
+<p align = center>Figure 1
