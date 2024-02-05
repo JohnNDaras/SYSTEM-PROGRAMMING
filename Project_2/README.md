@@ -26,14 +26,14 @@ directory for copying. <br>
 Command Line Arguments: The server is invoked with the following command-line format:  <br>
 ./dataServer -p <port> -s <thread_pool_size> -q <queue_size> -b <block_size>  <br>
 Where: <br>
-1. port: The port on which the server listens for external connections. 
-2. thread pool size: The number of worker threads in the thread pool. 
-3. queue size: The number of positions in the execution queue. 
-4. block size: The size of file blocks in bytes sent by worker threads. <br> <br>
+1.port: The port on which the server listens for external connections. 
+2.thread pool size: The number of worker threads in the thread pool. 
+3.queue size: The number of positions in the execution queue. 
+4.block size: The size of file blocks in bytes sent by worker threads. <br> <br>
 
 
 The client is invoked with the following command-line format: <br>
-./remoteClient -i <server_ip> -p <server_port> -d <directory>
+./remoteClient -i <server_ip> -p <server_port> -d <directory>  <br>
 
 Where: <br> 
 1. server ip: The IP address used by the server. <br>
