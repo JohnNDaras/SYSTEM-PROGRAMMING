@@ -25,12 +25,12 @@ directory for copying. <br>
 • The server's file system does not contain empty directories. <br> <br>
 Command Line Arguments: <br> The server is invoked with the following command-line format:  <br>
 ./dataServer -p <port> -s <thread_pool_size> -q <queue_size> -b <block_size>  <br> <br>
-Where: <br>
+Where: 
 <ol>
-<li>1.port: The port on which the server listens for external connections. <li>
-<li>2.thread pool size: The number of worker threads in the thread pool. <li>
-<li>3.queue size: The number of positions in the execution queue. <li>
-<li>4.block size: The size of file blocks in bytes sent by worker threads. <li>
+<li>port: The port on which the server listens for external connections. <li>
+<li>thread pool size: The number of worker threads in the thread pool. <li>
+<li>queue size: The number of positions in the execution queue. <li>
+<li>block size: The size of file blocks in bytes sent by worker threads. <li>
 <ol>
 
 The client is invoked with the following command-line format: <br>
