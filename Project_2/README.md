@@ -32,7 +32,7 @@ Where:
     <li>queue size: The number of positions in the execution queue. 
     <li>block size: The size of file blocks in bytes sent by worker threads.
 <ol>
-</ol>
+<br>
 The client is invoked with the following command-line format: <br>
 ./remoteClient -i <server_ip> -p <server_port> -d <directory>  <br> <br>
 
@@ -45,39 +45,39 @@ provided in a different order than specified in this description.
 Example Execution: In this paragraph, we describe an illustrative example of execution. The server
 has the following hierarchy:
 If we execute a client request to copy the entire hierarchy, we observe that different worker threads
-read and send file data to the client:
-thread_pool_size: 2
-queue_size: 2
-Block_size: 512
-Server was successfully initialized...
-Listening for connections to port 12500
-Accepted connection from localhost
-[Thread: 140069174429440]: About to scan directory Server
-[Thread: 140069174429440]: Adding file Server/file1 to the queue…
-[Thread: 140069174429440]: Adding file Server/Folder1/file5 to the queue...
-[Thread: 140069174429440]: Adding file Server/Folder1/file4 to the queue...
-[Thread: 140069193361152]: Received task: <Server/file1, 4>
-[Thread: 140069193361152]: About to read file Server/file1
-[Thread: 140069184968448]: Received task: <Server/Folder1/file5, 4>
-[Thread: 140069184968448]: About to read file Server/Folder1/file5
-[Thread: 140069174429440]: Adding file Server/file2 to the queue...
-[Thread: 140069174429440]: Adding file Server/file3 to the queue...
-[Thread: 140069193361152]: Received task: <Server/Folder1/file4, 4>
-[Thread: 140069193361152]: About to read file Server/Folder1/file4
-[Thread: 140069193361152]: Received task: <Server/file2, 4>
-[Thread: 140069193361152]: About to read file Server/file2
-[Thread: 140069193361152]: Received task: <Server/file3, 4>
-[Thread: 140069193361152]: About to read file Server/file3
-Client’s parameters are:
-serverIP: 127.0.0.1
-port: 12500
-directory: Server
-Connecting to 127.0.0.1 on port 12500
-Received: Server/file1
-Received: Server/Folder1/file4
-Received: Server/file2
-Received: Server/file3
-Received: Server/Folder1/file5
+read and send file data to the client:  <br>
+thread_pool_size: 2  <br>
+queue_size: 2  <br>
+Block_size: 512  <br>
+Server was successfully initialized...  <br>
+Listening for connections to port 12500  <br>
+Accepted connection from localhost  <br>
+[Thread: 140069174429440]: About to scan directory Server  <br>
+[Thread: 140069174429440]: Adding file Server/file1 to the queue…  <br>
+[Thread: 140069174429440]: Adding file Server/Folder1/file5 to the queue...  <br>
+[Thread: 140069174429440]: Adding file Server/Folder1/file4 to the queue...  <br>
+[Thread: 140069193361152]: Received task: <Server/file1, 4>  <br>
+[Thread: 140069193361152]: About to read file Server/file1  <br>
+[Thread: 140069184968448]: Received task: <Server/Folder1/file5, 4>  <br>
+[Thread: 140069184968448]: About to read file Server/Folder1/file5  <br>
+[Thread: 140069174429440]: Adding file Server/file2 to the queue...  <br>
+[Thread: 140069174429440]: Adding file Server/file3 to the queue...  <br>
+[Thread: 140069193361152]: Received task: <Server/Folder1/file4, 4>  <br>
+[Thread: 140069193361152]: About to read file Server/Folder1/file4  <br>
+[Thread: 140069193361152]: Received task: <Server/file2, 4>  <br>
+[Thread: 140069193361152]: About to read file Server/file2  <br>
+[Thread: 140069193361152]: Received task: <Server/file3, 4>  <br>
+[Thread: 140069193361152]: About to read file Server/file3  <br>
+Client’s parameters are:  <br>
+serverIP: 127.0.0.1  <br>
+port: 12500  <br>
+directory: Server  <br>
+Connecting to 127.0.0.1 on port 12500  <br>
+Received: Server/file1  <br>
+Received: Server/Folder1/file4  <br>
+Received: Server/file2  <br>
+Received: Server/file3  <br>
+Received: Server/Folder1/file5  <br>
 
 
 
