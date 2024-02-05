@@ -26,12 +26,11 @@ directory for copying. <br>
 Command Line Arguments: <br> The server is invoked with the following command-line format:  <br>
 ./dataServer -p <port> -s <thread_pool_size> -q <queue_size> -b <block_size>  <br> <br>
 Where: 
-
-<ol>
-    <li>port: The port on which the server listens for external connections. 
-    <li>thread pool size: The number of worker threads in the thread pool. 
-    <li>queue size: The number of positions in the execution queue. 
-    <li>block size: The size of file blocks in bytes sent by worker threads.
+<br>
+	- 1.port: The port on which the server listens for external connections. 
+	- 2.thread pool size: The number of worker threads in the thread pool. 
+	- 3.queue size: The number of positions in the execution queue. 
+	- 4.block size: The size of file blocks in bytes sent by worker threads.
 
     
 <br>
