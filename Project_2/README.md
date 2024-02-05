@@ -29,13 +29,13 @@ Where: <br>
 1. port: The port on which the server listens for external connections. 
 2. thread pool size: The number of worker threads in the thread pool. 
 3. queue size: The number of positions in the execution queue. 
-4. block size: The size of file blocks in bytes sent by worker threads. <br>
-The client is invoked with the following command-line format: <br> <br>
+4. block size: The size of file blocks in bytes sent by worker threads. <br> <br>
+The client is invoked with the following command-line format: <br>
 ./remoteClient -i <server_ip> -p <server_port> -d <directory>
-Where: <b> 
-1. server ip: The IP address used by the server. <b>
-2. server port: The port on which the server listens for external connections. <b>
-3. directory: The directory to copy (a relative path). <b>
+Where: <br> 
+1. server ip: The IP address used by the server. <br>
+2. server port: The port on which the server listens for external connections. <br>
+3. directory: The directory to copy (a relative path). <br> <br>
 Both command-line arguments are mandatory for both executable programs. Argument pairs can be
 provided in a different order than specified in this description.
 Example Execution: In this paragraph, we describe an illustrative example of execution. The server
