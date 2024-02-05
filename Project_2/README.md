@@ -18,10 +18,10 @@ time.
 Client: The client, named remoteClient, connects to the server on a specified port and provides the
 directory name to copy. For each file in the directory, the client receives the file name, file metadata,
 and file contents from the server. The client creates the necessary directories and subdirectories
-locally. If a file already exists in the local file system, it is deleted and recreated from scratch.  <\n>
-Conventions: <lb>
+locally. If a file already exists in the local file system, it is deleted and recreated from scratch.  <br>
+Conventions: <br>
 • The client is assumed to know the hierarchy of the server's file system and can choose any 
-directory for copying. <b>
+directory for copying. <br>
 • The server's file system does not contain empty directories. <b> <b>
 Command Line Arguments: The server is invoked with the following command-line format:
 ./dataServer -p <port> -s <thread_pool_size> -q <queue_size> -b <block_size>
