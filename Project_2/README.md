@@ -22,14 +22,14 @@ locally. If a file already exists in the local file system, it is deleted and re
 Conventions: <br>
 • The client is assumed to know the hierarchy of the server's file system and can choose any 
 directory for copying. <br>
-• The server's file system does not contain empty directories. <b> <b>
+• The server's file system does not contain empty directories. <br> <br>
 Command Line Arguments: The server is invoked with the following command-line format:
 ./dataServer -p <port> -s <thread_pool_size> -q <queue_size> -b <block_size>
 Where: <b>
-1. port: The port on which the server listens for external connections. <b>
-2. thread pool size: The number of worker threads in the thread pool. <b>
-3. queue size: The number of positions in the execution queue. <b> 
-4. block size: The size of file blocks in bytes sent by worker threads. <b>
+1. port: The port on which the server listens for external connections. 
+2. thread pool size: The number of worker threads in the thread pool. 
+3. queue size: The number of positions in the execution queue. 
+4. block size: The size of file blocks in bytes sent by worker threads. <br>
 The client is invoked with the following command-line format: <b> <b>
 ./remoteClient -i <server_ip> -p <server_port> -d <directory>
 Where: <b> 
