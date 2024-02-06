@@ -1,7 +1,10 @@
+**<p align = center>Concurrent Directory Copying in Unix: Efficient Server-Client Communication with Threaded Processing**
+
+
 This project pertains to the domain of system programming within a Unix environment, specifically
 with thread creation and network communication. It’s a program that recursively copies all contents
 of a directory from a server to the local file system of a client. The server handles requests from
-multiple clients concurrently and process each request in parallel, breaking it into independent file
+clients concurrently and process each request in parallel, breaking it into independent file
 copy operations.
 Entities and Communication: The main entities in the design are the server and the client. Multiple
 clients can connect simultaneously to a server, and communication between them is achieved using
