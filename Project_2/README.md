@@ -51,13 +51,14 @@ Where: <br>
 Both command-line arguments are mandatory for both executable programs. Argument pairs can be
 provided in a different order than specified in this description.
 Example Execution: In this paragraph, we describe an illustrative example of execution. The server
-has the following hierarchy: <br> <br> <br>
+has the following hierarchy: <br> <br>
 ![Screenshot from 2024-02-05 19-59-15](https://github.com/JohnNDaras/SYSTEM-PROGRAMMING/assets/117290033/89373135-4021-41bc-99d1-23f25c594151)
 
-<br> <br>
+<br>
+
 If we execute a client request to copy the entire hierarchy, we observe that different worker threads
 read and send file data to the client:  <br>
-thread_pool_size: 2  <br>
+<em>thread_pool_size: 2  <br>
 queue_size: 2  <br>
 Block_size: 512  <br>
 Server was successfully initialized...  <br>
@@ -89,7 +90,5 @@ Received: Server/Folder1/file4  <br>
 Received: Server/file2  <br>
 Received: Server/file3  <br>
 Received: Server/Folder1/file5  <br>
+</em>
 
-
-
-![Screenshot from 2024-02-05 19-59-15](https://github.com/JohnNDaras/SYSTEM-PROGRAMMING/assets/117290033/89373135-4021-41bc-99d1-23f25c594151)
