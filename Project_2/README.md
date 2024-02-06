@@ -57,7 +57,7 @@ has the following hierarchy: <br> <br>
 <br>
 
 If we execute a client request to copy the entire hierarchy, we observe that different worker threads
-read and send file data to the client:  <br>
+read and send file data to the client:  <br> <br> <br>
 <em>thread_pool_size: 2  <br>
 queue_size: 2  <br>
 Block_size: 512  <br>
