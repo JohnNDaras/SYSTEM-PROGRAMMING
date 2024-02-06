@@ -24,9 +24,8 @@ Conventions: <br>
 directory for copying. <br>
 • The server's file system does not contain empty directories. <br> <br>
 Command Line Arguments: <br> The server is invoked with the following command-line format:  <br>
-<em> ./dataServer -p <port> -s <thread_pool_size> -q <queue_size> -b <block_size></em>  <br> <br>
+          <em> ./dataServer -p <port> -s <thread_pool_size> -q <queue_size> -b <block_size></em>  <br> <br>
 
-$\mathcal{\color{purple}{this \ <port> \ a \ paragraph} \ \color{cyan}{in \ another \ font}}$
 
 
 Where: 
