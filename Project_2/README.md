@@ -19,14 +19,12 @@ Client: The client, named remoteClient, connects to the server on a specified po
 directory name to copy. For each file in the directory, the client receives the file name, file metadata,
 and file contents from the server. The client creates the necessary directories and subdirectories
 locally. If a file already exists in the local file system, it is deleted and recreated from scratch.  <br> <br>
-Conventions: <br>
+**Conventions:** <br>
 • The client is assumed to know the hierarchy of the server's file system and can choose any 
 directory for copying. <br>
 • The server's file system does not contain empty directories. <br> <br>
-Command Line Arguments: <br> The server is invoked with the following command-line format:  <br>
-          <em> ./dataServer -p <port> -s <thread_pool_size> -q <queue_size> -b <block_size></em>  <br> <br>
 
-Command Line Arguments: <br> The server is invoked with the following command-line format:
+**Command Line Arguments:** <br> The server is invoked with the following command-line format:
 
     ./dataServer -p <port> -s <thread_pool_size> -q <queue_size> -b <block_size></em>  <br> <br>
 
@@ -45,9 +43,9 @@ The client is invoked with the following command-line format: <br>
 ./remoteClient -i <server_ip> -p <server_port> -d <directory>  <br> <br>
 
 Where: <br> 
-1. server ip: The IP address used by the server. <br>
-2. server port: The port on which the server listens for external connections. <br>
-3. directory: The directory to copy (a relative path). <br> <br>
+- server ip: The IP address used by the server. <br>
+- server port: The port on which the server listens for external connections. <br>
+- directory: The directory to copy (a relative path). <br> <br>
 Both command-line arguments are mandatory for both executable programs. Argument pairs can be
 provided in a different order than specified in this description.
 Example Execution: In this paragraph, we describe an illustrative example of execution. The server
