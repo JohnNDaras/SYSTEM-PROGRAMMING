@@ -43,9 +43,9 @@ The client is invoked with the following command-line format: <br>
 ./remoteClient -i <server_ip> -p <server_port> -d <directory>  <br> <br>
 
 Where: <br> 
-- server ip: The IP address used by the server. <br>
-- server port: The port on which the server listens for external connections. <br>
-- directory: The directory to copy (a relative path). <br> <br>
+        - server ip: The IP address used by the server. <br>
+        - server port: The port on which the server listens for external connections. <br>
+        - directory: The directory to copy (a relative path). <br> <br>
 Both command-line arguments are mandatory for both executable programs. Argument pairs can be
 provided in a different order than specified in this description.
 Example Execution: In this paragraph, we describe an illustrative example of execution. The server
