@@ -39,8 +39,6 @@ Where:
 
     
 <br>
-The client is invoked with the following command-line format: <br>
-./remoteClient -i <server_ip> -p <server_port> -d <directory>  <br> <br>
 
 The client is invoked with the following command-line format:
 
