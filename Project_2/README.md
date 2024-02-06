@@ -5,10 +5,10 @@ This project pertains to the domain of system programming within a Unix environm
 with thread creation and network communication. It’s a program that recursively copies all contents
 of a directory from a server to the local file system of a client. The server handles requests from
 clients concurrently and process each request in parallel, breaking it into independent file
-copy operations.
+copy operations. <br><br>
 Entities and Communication: The main entities in the design are the server and the client. Multiple
 clients can connect simultaneously to a server, and communication between them is achieved using
-sockets.
+sockets. <br><br>
 Server: The server, named dataServer, waits for connections from clients on a predefined port
 provided as an argument during startup. The server creates two types of threads: communication
 threads and worker threads. The communication thread handles client connections and reads the
@@ -17,7 +17,7 @@ where each file in the hierarchy is placed. The server has a thread pool with wo
 pool size is specified as an argument during execution. Worker threads are responsible for reading
 file contents and sending them to the client in blocks, with block size specified as a command-line
 argument. The server ensures that each client's socket is written to by only one worker thread at a
-time.
+time. <br><br>
 Client: The client, named remoteClient, connects to the server on a specified port and provides the
 directory name to copy. For each file in the directory, the client receives the file name, file metadata,
 and file contents from the server. The client creates the necessary directories and subdirectories
