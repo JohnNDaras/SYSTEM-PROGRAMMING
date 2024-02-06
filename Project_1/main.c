@@ -26,25 +26,25 @@ int nodeCnt1=0;
 
 int main (int argc,const char **argv)
 {
-	int signal_fd;
-	int inotify_fd;
-	struct pollfd fds[FD_POLL_MAX];
-	char bufin[45];
-	char bufout[45];
-	size_t bytes_read, bytes_written;
-	int rCode;
-	int f1,f2;
+    int signal_fd;
+    int inotify_fd;
+    struct pollfd fds[FD_POLL_MAX];
+    char bufin[45];
+    char bufout[45];
+    size_t bytes_read, bytes_written;
+    int rCode;
+    int f1,f2;
   
   
   /////////   CREATE NAMED PIPES  (From Listener to Manager) //////////////////
   
-	f1 = mkfifo("pipeIIIII",0666);
-	char str[256];
+    f1 = mkfifo("pipeIIIII",0666);
+    char str[256];
     int fifo_write,fifo_read;
   
   
 ///////////Here we create a directory by handling path string (for example if we have a path "/home/syspro/test", we 'll cretae the directory "/home/syspro/outputsdi1800040" ///////////////
-	char ns[200] ;
+    char ns[200] ;
     strcpy(&ns[0],argv[1]);
     char ns1[200];
     char nstr[200];
@@ -52,16 +52,13 @@ int main (int argc,const char **argv)
     char output[30]= "outputsdi1800040";       
     char slash[2]="/";
     int nstrcount=0,u=0;
-
-    
-
-	revstr(ns);
-	nstrcount = strcspn(ns, "/");		
-	strncpy(nstr, ns, nstrcount);
-	nstr[nstrcount] = '\0'; 
-	revstr(nstr);
-	revstr(ns);
-	ns[strlen(ns)-nstrcount-1] = '\0';
+    revstr(ns);
+    nstrcount = strcspn(ns, "/");		
+    strncpy(nstr, ns, nstrcount);
+    nstr[nstrcount] = '\0'; 
+    revstr(nstr);
+    revstr(ns);
+    ns[strlen(ns)-nstrcount-1] = '\0';
 
     sprintf(final, "%s%s%s", ns,slash,output);
     printf("Teliko:\n%s\n", final);
@@ -69,11 +66,11 @@ int main (int argc,const char **argv)
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   
   
-  	int count = 0;
-	struct dirent *res;
-	struct stat sb;
-	char path[200];
-	strcpy(&path[0],argv[1]);
+    int count = 0;
+    struct dirent *res;
+    struct stat sb;
+    char path[200];
+    strcpy(&path[0],argv[1]);
     
 
 	
@@ -245,10 +242,10 @@ int main (int argc,const char **argv)
 	printf ("Exiting program...\n");
 	}
 
-											/*/________________________________________END OF LISTENER  ________________________________________*/
+				/*/________________________________________END OF LISTENER  ________________________________________*/
 
 
-											/*/___________________________________________    MANAGER ____________________________________________/*/
+				/*/___________________________________________    MANAGER ____________________________________________/*/
 																								
 	if(listener == 0)
 	{
@@ -281,7 +278,7 @@ int main (int argc,const char **argv)
 		int i=0,j,ctr,z,w;
 		int arithmos;
 
-  //Variables we use to extract location from urls 
+  		//Variables we use to extract location from urls 
 		int succ_parsing = 0; // Whether the parsing has been
 		char ip[100]; // IP field of the HTTP uri
 		int port;  // Port field of the HTTP uri if found
@@ -497,7 +494,7 @@ int main (int argc,const char **argv)
 				find_result++;
 			}
 			line_num++;
-		}	rCode=PrintListPayloadsIp(listHeadIp, fPtr);          					 // then print our list to our file in our output directory 
+		}	rCode=PrintListPayloadsIp(listHeadIp, fPtr);          				 // then print our list to our file in our output directory 
    
     /* Close file to save file data */
     fclose(fPtr);
@@ -515,7 +512,7 @@ int main (int argc,const char **argv)
      }
    }	
 	
-							/*/ ________________HERE IS OUR MAIN MANAGER PROCESS______________/*/												
+					/*/ ________________HERE IS OUR MAIN MANAGER PROCESS______________/*/												
 	
     while(strcmp(str,"end")!=0)
     {
@@ -548,7 +545,7 @@ int main (int argc,const char **argv)
 				}
 				kill(children[i], SIGCONT);
 	
-/*////////////////////////////////////////////////////    Write from Mangers to Worker (The path that manager received from listener    ///////////////////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////    Write from Mangers to Worker (The path that manager received from listener    //////////////////////////////////////*/
 				fifo_write1= open("pipeJJJJJ",O_WRONLY);
 					if(fifo_write1<0)
 						printf("\nError opening pipe");
