@@ -27,6 +27,7 @@ Command Line Arguments: <br> The server is invoked with the following command-li
 ```diff
 <em> # ./dataServer -p <port> -s <thread_pool_size> -q <queue_size> -b <block_size></em>  <br> <br>
 ```
+$${\color{red}./dataServer -p <port> -s <thread_pool_size> -q <queue_size> -b <block_size>}$$  <br>
 
 Where: 
 <br>
