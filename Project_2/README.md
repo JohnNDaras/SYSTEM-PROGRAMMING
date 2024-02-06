@@ -26,7 +26,7 @@ directory for copying. <br>
 
 **Command Line Arguments:** <br> The server is invoked with the following command-line format:
 
-    ./dataServer -p <port> -s <thread_pool_size> -q <queue_size> -b <block_size></em>  <br> <br>
+    ./dataServer -p <port> -s <thread_pool_size> -q <queue_size> -b <block_size>
 
 
 
@@ -41,6 +41,10 @@ Where:
 <br>
 The client is invoked with the following command-line format: <br>
 ./remoteClient -i <server_ip> -p <server_port> -d <directory>  <br> <br>
+
+The client is invoked with the following command-line format:
+
+    ./remoteClient -i <server_ip> -p <server_port> -d <directory>
 
 Where: <br> 
         - server ip: The IP address used by the server. <br>
