@@ -41,7 +41,8 @@ manager is done with Control+C (SIGINT signal), and before terminating, it must 
 processes (listener and workers).
 The structure of the process hierarchy is summarized in Figure 1.
 
-
+<br>
+**Note**: Static strings are utilized in this project with an understanding of memory allocation. However, the primary focus remains on mastering Process Management and Communication in the Unix Environment.
 
 
 
