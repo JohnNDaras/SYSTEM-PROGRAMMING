@@ -26,6 +26,10 @@ directory for copying. <br>
 Command Line Arguments: <br> The server is invoked with the following command-line format:  <br>
           <em> ./dataServer -p <port> -s <thread_pool_size> -q <queue_size> -b <block_size></em>  <br> <br>
 
+Command Line Arguments: <br> The server is invoked with the following command-line format:
+
+    ./dataServer -p <port> -s <thread_pool_size> -q <queue_size> -b <block_size></em>  <br> <br>
+
 
 
 Where: 
