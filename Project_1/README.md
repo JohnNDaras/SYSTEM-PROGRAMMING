@@ -46,8 +46,7 @@ The structure of the process hierarchy is summarized in Figure 1.
 
 ![Screenshot from 2024-02-05 18-48-24~2](https://github.com/JohnNDaras/SYSTEM-PROGRAMMING/assets/117290033/dab11f88-c352-4795-b50c-d9cd78a374f2)
 
-<b>
-<p align = center>Figure 1
+**<p align = center>Figure 1**
 <br>
 **Note**: Static strings are utilized in this project with an understanding of memory allocation. However, the primary focus remains on mastering Process Management and Communication in the Unix Environment.
 <br>
