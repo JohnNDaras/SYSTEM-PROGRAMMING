@@ -26,7 +26,7 @@ i.e., of the form http://.... Each URL starts with http:// .
 For each detected URL, it is required to extract information about its location, excluding the www.
 Refer to the following link: URL Definition for different parts of a URL. We are specifically
 interested in finding its location without the www. For example, for the department website URL
-http://www.di.uoa.gr, the location is "di.uoa.gr." (Other possible URLs could be i.e. https://www.youtube.com, http://192.168.1.1/index.html, http://www.192.168.1.1:8080/index.html/, http://www.10.0.0.1:3000/dashboard/, http://www.example.com:8080/home/, http://www.123.456.789.123:9090/path/to/resource/)
+http://www.di.uoa.gr, the location is "di.uoa.gr." (Other possible URLs could be i.e. https://www.youtube.com, http://192.168.1.1/index.html, http://www.122.128.1.1:8080/index.html/, http://www.10.1.0.1:3000/dashboard/, http://www.example.com:8080/home/, http://www.122.422.189.123:9090/path/to/resource/)
 While reading the file, the worker creates a new file in which it records all detected locations along
 with their occurrence number. For instance, if 3 URLs with the location "di.uoa.gr" appear in the
 added file, the worker's output file will contain the line "di.uoa.gr 3," and similarly, a line for every
