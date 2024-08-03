@@ -6,13 +6,13 @@
 #include <poll.h>
 #include <errno.h>
 #include <sys/signalfd.h>
-#include <linux/inotify.h>
+//#include <linux/inotify.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <dirent.h>
 #include <sys/wait.h>
-
-
+#include <sys/inotify.h>
+#include <fcntl.h>
 
 /* Structure to keep track of monitored directories */
 typedef struct {
