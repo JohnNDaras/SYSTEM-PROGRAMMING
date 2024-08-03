@@ -51,3 +51,13 @@ The structure of the process hierarchy is summarized in Figure 1.
 
 **Note**: Static strings are utilized in this project with an understanding of memory allocation. However, the primary focus remains on mastering Process Management and Communication in the Unix Environment.
 <br>
+<br>
+Also the Bash script summarize.sh processes files in the current directory to sum numbers associated with strings that end with a user-provided substring. It starts by checking if the user has provided a required argument, which is the substring to match. If the argument is missing, it prompts the user for correct usage and exits. <br>
+
+The script then initializes an associative array to store sums of numbers indexed by strings. It iterates over all files in the directory, and for each file, it reads each line expecting a comma-separated string and number. Leading and trailing whitespace are removed from both the string and the number. It checks if the string ends with the specified substring provided by the user. If it does, the script adds the corresponding number to the sum for that string in the associative array. <br>
+
+After processing all files, the script prints each string that matched the criteria along with its total sum and calculates the overall sum of all matching strings. Finally, it prints the total sum of numbers for strings that end with the provided substring. <br>
+
+The script expects one argument, which is the substring to match. You run the script by providing this argument on the command line: <br>
+
+./summurize.sh <string_to_match>
